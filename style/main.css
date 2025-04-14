@@ -1,0 +1,246 @@
+/* Importa a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+  /* Cores - Brand */
+  --brand-primary: #F67841;
+  --brand-secondary: #F3541C;
+  --brand-accent: #E43A12;
+  --brand-blue: #2135A6;
+
+  /* Cores - Texto */
+  --text-primary: #292524;
+  --text-secondary: #57534E;
+  --text-tertiary: #8F8881;
+  --text-highlight: #E43A12;
+
+  /* Cores - Surface */
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #FEE7D6;
+  --surface-disabled: #E7E5E4;
+
+  /* Cores - Stroke */
+  --stroke-default: #D6D3D1;
+  --stroke-highlight: #F3541C;
+
+  /* Cores - Semânticas */
+  --semantic-error: #DC2626;
+
+  /* Tipografia */
+  --font-family: 'Poppins', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--surface-primary);
+  color: var(--text-primary);
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.form-section {
+  flex: 1;
+}
+
+.form-section h1 {
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.form-section p {
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: 1px solid var(--stroke-default);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:invalid {
+  border-color: var(--semantic-error);
+}
+
+input[type="file"] {
+  padding: 0.5rem;
+}
+
+.inline {
+  display: flex;
+  gap: 1rem;
+}
+
+.trilhas label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox {
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 16px;
+  font-size: 14px;
+  
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 2px;
+}
+
+.checkbox a {
+  color: #E43A12;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.checkbox a:hover {
+  text-decoration: none;
+}
+
+.botoes {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button[type="reset"] {
+  background-color: var(--surface-disabled);
+  color: var(--text-primary);
+}
+
+button[type="submit"] {
+  background-color: var(--brand-accent);
+  color: white;
+}
+
+button[disabled] {
+  background-color: var(--surface-disabled);
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+}
+
+.image-section {
+  width: 640px;
+  position: sticky;
+  top: 40px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  background-color: #2135A6;
+  padding: 32px;
+  border-radius: 12px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logos {
+  margin-top: 2rem;
+}
+
+.trilhas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.trilha-option {
+  position: relative;
+  cursor: pointer;
+}
+
+.trilha-option input[type="radio"] {
+  display: none;
+}
+
+.trilha-option .card {
+  border: 2px solid #E7E5E4;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.trilha-option input[type="radio"]:checked + .card {
+  border-color: #E43A12;
+}
+
+.trilha-option img {
+  width: 32px;
+  margin-bottom: 8px;
+}
+
+.upload-box {
+  display: block;
+  margin-top: 12px;
+  padding: 12px;
+  border: 2px dashed #E7E5E4;
+  border-radius: 8px;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload-box input[type="file"] {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+.upload-box .upload-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #8F8881;
+  font-size: 14px;
+}
+
+.upload-box .upload-content img {
+  width: 32px;
+  margin-bottom: 6px;
+}

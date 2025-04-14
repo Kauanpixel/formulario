@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Inscrição</title>
+  <link rel="stylesheet" href="style/main.css" />
+  <script defer src="scripts/validate.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <a href="#" class="back">&larr; Voltar</a>
+      <h1>Formulário de inscrição</h1>
+      <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
+
+      <form id="inscricaoForm">
+        <fieldset>
+          <legend>Informações do participante</legend>
+          <label>Nome completo <input type="text" name="nome" required /></label>
+          <label>Data de nascimento <input type="date" name="nascimento" required /></label>
+          <label>CPF <input type="text" name="cpf" required /></label>
+          <label>Sexo 
+            <select name="sexo" required>
+              <option value="">Selecione</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </label>
+          <label>E-mail <input type="email" name="email" required /></label>
+          <label>Telefone <input type="tel" name="telefone" required /></label>
+          <label class="upload-box">
+            Documento de identidade
+            <input type="file" name="identidade" accept=".pdf,.jpg,.png" required />
+            <div class="upload-content">
+              <img src="assets/icons/upload.svg" alt="Ícone upload" />
+              <span>Clique aqui para selecionar o arquivo</span>
+            </div>
+          </label>
+
+        <fieldset>
+          <legend>Endereço residencial</legend>
+          <label>CEP <input type="text" name="cep" required /></label>
+          <div class="inline">
+            <label>Rua <input type="text" name="rua" required /></label>
+            <label>Número <input type="text" name="numero" required /></label>
+          </div>
+          <div class="inline">
+            <label>Cidade <input type="text" name="cidade" required /></label>
+            <label>Estado <input type="text" name="estado" required /></label>
+          </div>
+        
+        <label class="upload-box">
+          Comprovante de residência
+          <input type="file" name="residencia" accept=".pdf,.jpg,.png" required />
+          <div class="upload-content">
+            <img src="assets/icons/upload.svg" alt="Ícone upload" />
+            <span>Clique aqui para selecionar o arquivo</span>
+          </div>
+        </label>
+        
+
+        <fieldset>
+          <legend>Trilhas de aprendizagem</legend>
+          <p>Selecione apenas uma trilha</p>
+          <div class="trilhas">
+            <label class="trilha-option">
+              <input type="radio" name="trilha" value="Front-end" required />
+              <div class="card">
+                <img src="assets/icons/frontend.svg" alt="Ícone Front-end" />
+                <span>Programação Front-end</span>
+              </div>
+            </label>
+        
+            <label class="trilha-option">
+              <input type="radio" name="trilha" value="Back-end" />
+              <div class="card">
+                <img src="assets/icons/backend.svg" alt="Ícone Back-end" />
+                <span>Programação Back-end</span>
+              </div>
+            </label>
+        
+            <label class="trilha-option">
+              <input type="radio" name="trilha" value="Jogos" />
+              <div class="card">
+                <img src="assets/icons/games.svg" alt="Ícone Jogos" />
+                <span>Programação de Jogos</span>
+              </div>
+            </label>
+        
+            <label class="trilha-option">
+              <input type="radio" name="trilha" value="UX" />
+              <div class="card">
+                <img src="assets/icons/ux.svg" alt="Ícone UX" />
+                <span>Design e Experiência</span>
+              </div>
+            </label>
+        
+            <label class="trilha-option">
+              <input type="radio" name="trilha" value="Dados" />
+              <div class="card">
+                <img src="assets/icons/data.svg" alt="Ícone Dados" />
+                <span>Ciência de Dados</span>
+              </div>
+            </label>
+          </div>
+        </fieldset>
+        
+
+        <label class="checkbox">
+          <input type="checkbox" name="aceite" required />
+          Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>.
+        </label>
+
+        <div class="botoes">
+          <button type="reset">Cancelar</button>
+          <button type="submit">Fazer inscrição</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <div class="illustration">
+        <img src="assets/images/illustration.png" alt="Ilustração do Programa Trilhas" />
+      </div>
+      <div class="logos">
+        <img src="assets/images/trilhas_logo.png" alt="Logo Trilhas" />
+      </div>
+    </div>
+
+  </div>
+  
+</body>
+</html>
