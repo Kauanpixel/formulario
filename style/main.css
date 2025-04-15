@@ -286,3 +286,54 @@ input.erro, select.erro {
   border-color: #e43a12;
   outline: none;
 }
+/* ========================
+   Responsividade
+   ======================== */
+
+   @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      padding: 20px 16px;
+    }
+  
+    .image-section {
+      width: 100%;
+      position: static;
+      margin-bottom: 24px;
+    }
+  
+    .inline {
+      flex-direction: column;
+    }
+  
+    .botoes {
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .trilhas {
+      grid-template-columns: 1fr;
+    }
+  
+    .form-section h1 {
+      font-size: 24px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    button {
+      font-size: 0.875rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    input,
+    select {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+  
+    .upload-box .upload-content {
+      font-size: 13px;
+    }
+  }
+  

@@ -31,7 +31,9 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   
       if (isValid) {
-        form.submit();
+        alert('Inscrição realizada com sucesso!');
+        form.reset();
+        localStorage.removeItem('dadosFormulario'); // limpa os dados salvos, se desejar
       }
     });
   
