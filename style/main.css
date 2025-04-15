@@ -1,32 +1,29 @@
-/* Importa a fonte Poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-  /* Cores - Brand */
+
   --brand-primary: #F67841;
   --brand-secondary: #F3541C;
   --brand-accent: #E43A12;
   --brand-blue: #2135A6;
 
-  /* Cores - Texto */
+
   --text-primary: #292524;
   --text-secondary: #57534E;
   --text-tertiary: #8F8881;
   --text-highlight: #E43A12;
 
-  /* Cores - Surface */
   --surface-primary: #FFFFFF;
   --surface-secondary: #FEE7D6;
   --surface-disabled: #E7E5E4;
 
-  /* Cores - Stroke */
   --stroke-default: #D6D3D1;
   --stroke-highlight: #F3541C;
 
-  /* Cores - Semânticas */
+
   --semantic-error: #DC2626;
 
-  /* Tipografia */
   --font-family: 'Poppins', sans-serif;
 }
 
@@ -286,9 +283,8 @@ input.erro, select.erro {
   border-color: #e43a12;
   outline: none;
 }
-/* ========================
-   Responsividade
-   ======================== */
+
+/* Responsividade */
 
    @media screen and (max-width: 768px) {
     .container {

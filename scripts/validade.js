@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('inscricaoForm');
   
     form.addEventListener('submit', function (event) {
-      event.preventDefault(); // Previne envio até validar tudo
+      event.preventDefault();
   
       let isValid = true;
       const camposObrigatorios = form.querySelectorAll('[required]');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (isValid) {
         alert('Inscrição realizada com sucesso!');
         form.reset();
-        localStorage.removeItem('dadosFormulario'); // limpa os dados salvos, se desejar
+        localStorage.removeItem('dadosFormulario'); 
       }
     });
   
