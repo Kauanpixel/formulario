@@ -43,6 +43,26 @@ body {
   padding: 2rem;
 }
 
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-tertiary);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.back-link img {
+  width: 16px;
+  height: 16px;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: var(--text-secondary);
+}
+
 .container {
   display: flex;
   align-items: flex-start;
@@ -105,25 +125,35 @@ input[type="file"] {
 }
 
 .checkbox {
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   gap: 8px;
-  margin-top: 16px;
   font-size: 14px;
-  
+  color: var(--text-secondary);
+  margin: 24px 0;
+  line-height: 1.4;
 }
 
 .checkbox input[type="checkbox"] {
-  margin-right: 2px;
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.checkbox label {
+  display: inline;
+  cursor: pointer;
 }
 
 .checkbox a {
-  color: #E43A12;
+  color: var(--brand-accent);
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .checkbox a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .botoes {
@@ -243,4 +273,16 @@ button[disabled] {
 .upload-box .upload-content img {
   width: 32px;
   margin-bottom: 6px;
+}
+
+.mensagem-erro {
+  color: #e43a12;
+  font-size: 0.875rem;
+  margin-top: 4px;
+  display: block;
+}
+
+input.erro, select.erro {
+  border-color: #e43a12;
+  outline: none;
 }

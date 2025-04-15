@@ -10,7 +10,10 @@
 <body>
   <div class="container">
     <div class="form-section">
-      <a href="#" class="back">&larr; Voltar</a>
+      <a href="#" class="back-link">
+        <img src="assets/icons/arrow-left.svg" alt="Voltar" />
+        Voltar
+      </a>
       <h1>Formulário de inscrição</h1>
       <p>Preencha os dados abaixo para fazer sua inscrição no Programa Trilhas.</p>
 
@@ -38,7 +41,7 @@
               <span>Clique aqui para selecionar o arquivo</span>
             </div>
           </label>
-
+        </fieldset>
         <fieldset>
           <legend>Endereço residencial</legend>
           <label>CEP <input type="text" name="cep" required /></label>
@@ -50,7 +53,7 @@
             <label>Cidade <input type="text" name="cidade" required /></label>
             <label>Estado <input type="text" name="estado" required /></label>
           </div>
-        
+        </fieldset>
         <label class="upload-box">
           Comprovante de residência
           <input type="file" name="residencia" accept=".pdf,.jpg,.png" required />
@@ -108,10 +111,12 @@
         </fieldset>
         
 
-        <label class="checkbox">
-          <input type="checkbox" name="aceite" required />
-          Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>.
-        </label>
+        <div class="checkbox">
+          <input type="checkbox" name="aceite" id="aceite" required />
+          <label for="aceite">
+            Declaro que li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a>.
+          </label>
+        </div>
 
         <div class="botoes">
           <button type="reset">Cancelar</button>
@@ -130,6 +135,6 @@
     </div>
 
   </div>
-  
+
 </body>
 </html>
