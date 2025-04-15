@@ -110,6 +110,11 @@
           </div>
         </fieldset>
         
+        <fieldset>
+          <legend>Credenciais de acesso</legend>
+          <label>ID do usuário <input type="text" name="usuarioId" required /></label>
+          <label>Senha <input type="password" name="senha" required /></label>
+        </fieldset>
 
         <div class="checkbox">
           <input type="checkbox" name="aceite" id="aceite" required />
@@ -119,9 +124,10 @@
         </div>
 
         <div class="botoes">
-          <button type="reset">Cancelar</button>
-          <button type="submit">Fazer inscrição</button>
-        </div>
+  <button type="reset">Cancelar</button>
+  <button type="button" id="salvarBtn">Salvar dados</button>
+  <button type="submit">Fazer inscrição</button>
+</div>
       </form>
     </div>
 
